@@ -1,5 +1,6 @@
-/* 1. Salto al contenido (Accesibilidad) */
-
+/* --- ACCESIBILIDAD --- */
+/* El skip-link solo se ve cuando usas la tecla TAB */
+.skip-link {
     position: absolute;
     left: -10000px;
     top: auto;
@@ -8,52 +9,45 @@
     overflow: hidden;
 }
 
-focus {
+.skip-link:focus {
     position: static;
     width: auto;
     height: auto;
-    background-color: #f1f1f1;
+    background-color: white;
     padding: 10px;
-    border: 2px solid #000;
+    border: 2px solid blue;
 }
 
-/* 2. Navegación con Flexbox */
+/* --- NAVEGACIÓN (FLEXBOX) --- */
 nav ul {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
-    background-color: #333;
-    padding: 15px;
+    background-color: #f0f0f0;
+    padding: 20px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* 3. Grid para Neighborhood (Dos columnas) */
- {
+/* --- DISEÑO DE LAS PÁGINAS --- */
+/* Para Neighborhood: Fotos en 2 columnas */
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 20px;
 }
 
-/* 4. Flexbox para Parks */
-{
+/* Para Parks: Fotos una al lado de la otra */
+.flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 15px;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-/* 5. Modelo de Caja para las fotos */
+/* Estilo para las fotos */
 img {
-    border: 5px solid #555;
-    border-radius: 10px;
-    width: 100%; /* Para que no se salgan de la pantalla */
-    max-width: 400px;
-    padding: 5px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    border: 3px solid black;
+    max-width: 100%;
+    height: auto;
 }
