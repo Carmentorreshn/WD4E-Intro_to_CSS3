@@ -1,5 +1,5 @@
 /* 1. Salto al contenido (Accesibilidad) */
-.skip-link {
+
     position: absolute;
     left: -10000px;
     top: auto;
@@ -8,7 +8,7 @@
     overflow: hidden;
 }
 
-.skip-link:focus {
+focus {
     position: static;
     width: auto;
     height: auto;
@@ -33,7 +33,7 @@ nav a {
 }
 
 /* 3. Grid para Neighborhood (Dos columnas) */
-.grid {
+ {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -41,7 +41,7 @@ nav a {
 }
 
 /* 4. Flexbox para Parks */
-.flex {
+{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
